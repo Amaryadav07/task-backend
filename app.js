@@ -25,9 +25,7 @@ app.use(bodyParser.json())
 app.use('/admin',taskRoute)
 app.use('/user',userRoute)
 
-app.get("/", (req, res) => {
-    res.send("Server is live!");
-});
+
 
 app.listen(Port, () => {
   console.log(`Server running on port ${Port}`);
